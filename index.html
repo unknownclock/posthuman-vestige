@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <!-- css: Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/yay5yyt.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Post-Human Vestige</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/EasePack.min.js"></script>
+    
+    <script src="lettering.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="dark-overlay"></div>
+    <div class="snow-container"></div>
+    <!--
+      The body includes the content you see in the page.
+      Note: The footer has been moved inside the .layout section to follow the grid.
+    -->
+    <section class="layout">
+      <div class="header">
+        <h1>Post-Human Vestige</h1>
+      </div>
+      <div class="main">
+        <p style="text-align: right; margin: 0px">Is...?</p>
+        <p style="text-align: center">Is this it?</p>
+        <br />
+        <br /><br /><br /><br />
+        <p>Is this really how it ends?</p>
+        <br /><br /><br />
+
+        <section class="panel">
+          <div class="panel" id="panel-1">
+            <img
+              src="https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Snowflakes%20fixed.png?v=1741378608667"
+              alt="Snowflakes"
+            />
+            <div class="snow-text">
+              Snowflakes glitch in and out of my vision like stuck pixels on a
+              screen.
+            </div>
+          </div>
+          <div class="panel" id="panel-2">
+            <img
+              src="https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Heart%20fixed.png?v=1741378601173"
+              alt="Heart"
+            />
+            <div class="text">My heart sputters on like a decrepit engine.</div>
+          </div>
+
+          <p>My limbs keep locking up, freezing like a system crash.</p>
+          <p class="snow-text">
+            Heat escapes from every pore on my body, like a failing cooling
+            system, each vent pushing out more and more warmth.
+          </p>
+          <p>Wait, no. Not a cooling system.</p>
+          <p>I’m not a machine.</p>
+          <p>No matter how much easier things would be if I were.</p>
+          <p>Could I have avoided this if I were?</p>
+          <div class="panel" id="panel-3">
+            <img
+              src="https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Girl%20injured%20fiiixxxxeeed.png?v=1741370059138"
+              alt="clothing"
+            />
+            <div class="text">
+              I can feel myself atrophying, blood seeping through intricately
+              woven cloth—responsive materials and smart technology failing to
+              mend the weeping wound at my side.
+            </div>
+          </div>
+          <p class="snow-text">
+            Every cool breath burns my already overworked throat.
+          </p>
+          <p>It’s not enough.</p>
+          <p>I fight the drag in my limbs.</p>
+          <div class="panel" id="panel-4">
+            <img
+              src="https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Panel3.png?v=1742043780470"
+              alt="sky and trees"
+            />
+            <div class="text">The trees stretch towards the sky.</div>
+          </div>
+          <p>I don’t need to look at my wound to know—I’m dying.</p>
+          <p>
+            Despite the hundreds of different deaths I spent minutes, hours,
+            days imagining, I hadn’t imagined this one.
+          </p>
+          <p>
+            I’d imagined plane crashes, terrible freak accidents like falling
+            down the stairs or getting an infection when my foot had caught onto
+            a rusty nail.
+          </p>
+          <p class="snow-text">
+            I’d spent days after that one in particular, hazy images of my body
+            locking up and seizing as disease spreading through my body like a
+            computer virus printed on the backs of my eyelids.
+          </p>
+          <div class="panel" id="panel-7">
+            <img
+              src="https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Finished_Panel_7.png?v=1742043798590"
+              alt="blood"
+            />
+            <div class="text">I’m leaving sinkholes of warm blood behind.</div>
+          </div>
+          <p>
+            My brain begins to whir with all the possibilities of what happens
+            now.
+          </p>
+          <div id="panel-popups">
+            <img
+              src="https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Redo_Of_Panel_8_Base.png?v=1742043777313"
+              class="loading-image"
+              alt="Loading Image"
+            />
+            <div class="popup-container">
+              <div
+                class="popup"
+                id="popup-1"
+                style="
+                  background-image: url('https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/IE_fixed%231.png?v=1741365149932');
+                "
+              >
+                Are there wolves in this forest?
+              </div>
+              <div
+                class="popup"
+                id="popup-2"
+                style="
+                  background-image: url('https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/IE_fixed%232.png?v=1741365144972');
+                "
+              >
+                I don’t know.
+              </div>
+              <div
+                class="popup"
+                id="popup-3"
+                style="
+                  background-image: url('https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/IE_fixed%233.png?v=1741365140256');
+                "
+              >
+                How many wolves are even still on the planet? They were added to
+                the Endangered Species list in 2045.
+              </div>
+              <div
+                class="popup"
+                id="popup-4"
+                style="
+                  background-image: url('https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/IE_fixed%231.png?v=1741365149932');
+                "
+              >
+                I wouldn’t have to worry about this if I’d stayed inside, why
+                why didn’t I stay inside.
+              </div>
+              <div
+                class="popup"
+                id="popup-5"
+                style="
+                  background-image: url('https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/IE_fixed%232.png?v=1741365144972');
+                "
+              >
+                But wait—what does that matter?
+              </div>
+              <div
+                class="popup"
+                id="popup-6"
+                style="
+                  background-image: url('https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/IE_fixed%233.png?v=1741365140256');
+                "
+              >
+                The Synths or Androids will probably find me first.
+              </div>
+            </div>
+          </div>
+          <p>
+            Each new thought pops up like a new computer window that consumes
+            more and more memory, more space in my overloaded head.
+          </p>
+          <div class="panel" id="panel-9">
+            <img
+              src="https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Panel_9(1).png?v=1742043795433"
+              alt="cornered"
+            />
+            <div class="blown-away">
+              And now a new death is conjured, the Synths catching me and playing with me, injuring me like a brown bear playing with its food, only playing dead wouldn’t work on their artificial eyes.
+            </div>
+          </div>
+          <p>
+            Everything, from my temperature, and the rapid pump of blood through
+            my stiffening body, even the amount of heat loss being lost from me
+            would be recorded and transmitted as high-frequency radio signals to
+            a microchip implanted in the retina of their bionic vision systems.
+          </p>
+          <div class="panel" id="panel-11">
+            <img
+              src="https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Panel_11.png?v=1742043792137"
+              alt="cornered"
+            />
+            <div class="text">
+              Each new step becomes more sluggish than the last, and each of my
+              joints creak just a bit louder.
+            </div>
+          </div>
+          <p>I didn’t expect to die this way.</p>
+          <p>
+            I mean, I had imagined it a hundred, a thousand different times.
+          </p>
+          <p>
+            This gaudy, oppressive techno-jungle—where humans had long since
+            dropped to just 24% of the population—expected a level of perfection
+            only machines could provide.
+          </p>
+          <p>
+            Despite that, we still tried to hold onto our limited job prospects.
+          </p>
+          <p>We were mostly kept around as fleeting bits of entertainment.</p>
+          <p>There for nostalgia, prosperity, and for pity.</p>
+          <p>After all, with Synths, death had been delayed.</p>
+          <p>With androids, death had been eradicated.</p>
+          <p>Life was long for Synths and constant for Androids.</p>
+          <p>They would outlive us.</p>
+          <p>
+            Their memories are recorded and stored as high-resolution audio and
+            visual information stored in high-quality processors. Neural
+            networks had been merged with advanced computational systems.
+            Bio-Synthetic Composite Skin made to look however the Synths wanted.
+          </p>
+          <p>
+            Compared to the fleeting specks of life we clung to, we were
+            nothing.
+          </p>
+          <div class="panel" id="panel-27">
+            <img
+              src="https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Panel_27.png?v=1742043788857"
+              alt="outdated"
+            />
+            <div class="text">
+              We were outdated. We were the Macintosh to their Macs and laptops.
+            </div>
+          </div>
+          <p>Perhaps that’s why they kept us around.</p>
+          <p>
+            To confirm their own superiority. To pretend they had somehow
+            maintained their humanity in their new, unblemished forms.
+          </p>
+          <p>
+            When Synths first came on the rise, they were promoted as a way of
+            escaping imperfect bodies.
+          </p>
+          <p>Diseases, sickness, mental illnesses—gone.</p>
+          <p>Cancer? Nonexistent.</p>
+          <p>They were humans just repackaged, they said.</p>
+          <p>And then death, too, became a concept rather than a reality.</p>
+          <p>
+            Synths were made more and more out of synthetic material and less
+            and less of the original meaty, ephemeral flesh. At least for the
+            Synths.
+          </p>
+          <p>
+            For the stragglers of humans who were left, it remained the great
+            equalizer.
+          </p>
+
+          <p>The AI revolution, against all assumptions, was quiet.</p>
+          <p>
+            The march to our end is a distant hum, drowned out in a world
+            already deafened by noise.
+          </p>
+          <p>
+            There was no dystopian takeover. No guns, no nuclear bombs, nothing
+            flashy or dramatic.We made it easy.
+          </p>
+          <p>
+            We fed them our books, our movies, our thoughts, our work, our
+            money, our minds.
+          </p>
+          <p>
+            After so many wars, and so much death and so much human error, we
+            traded freedom and conscious thought for convenience.
+          </p>
+          <p>
+            We were flawed, but AI learned and grew, fattening up on the milk of
+            human knowledge and transcending it.
+          </p>
+          <p>
+            It was perfect, and we hung on their every word like the gospel.
+          </p>
+          <p>
+            We revered them, praising their knowledge, going to it when we were
+            stuck or lost.
+          </p>
+          <p>AI was perfect, and then we made them in our image.</p>
+          <p>And then they made us into theirs.</p>
+          <p>
+            AI programs snowballed into robots, which snowballed into androids,
+            which snowballed into Synths.
+          </p>
+          <p>
+            Memories, appearance, and biological data encoded and transmitted
+            into fusions of carbon fiber composites, steel, and artificial
+            organs.
+          </p>
+          <p>
+            In droves, people abandoned their flawed bodies for the clean,
+            perfect forms of Synths.
+          </p>
+          <p>
+            After worshipping AI and tech like gods for so long, is it any
+            surprise that we clawed at the opportunity to become more like them?
+          </p>
+          <p>Humans created their replacements.</p>
+          <p>Some even became their replacements.</p>
+          <p>
+            But—are you still human if every original part of you has been
+            replaced?
+          </p>
+          <p>August 28th, 2045.</p>
+          <p>The day Synth testing had been completed.</p>
+          <p>
+            The day humanity, in the sense of being human, had signed its own
+            death warrant.
+          </p>
+          <p>They outnumbered us so quickly.</p>
+          <p>The androids.</p>
+          <p>The Synths—especially the Synths.</p>
+          <p>Each new Synth meant one less human body in the world.</p>
+          <p>Viscera replaced by nanotech and steel.</p>
+          <p>
+            The day the President of _______ died, the drums of death had gotten
+            louder.
+          </p>
+          <p>It wasn’t the death itself that mattered.</p>
+          <p>It was what happened after.</p>
+          <p>He was the last human president.</p>
+          <p>And the first Synth one.</p>
+          <p>I was 10 years old when it happened.</p>
+          <p>
+            I remember sitting in my grandmother’s living room, an old-style
+            flat-screen TV blaring one of his live speeches.
+          </p>
+          <p>By then, the human population had dropped to 37%.</p>
+          <p>And it was still plummeting.</p>
+          <p>
+            Humans were dying faster and faster, finding new ways to disappear.
+          </p>
+          <p>
+            The collapse of human society had long begun and was reaching its
+            fever pitch.
+          </p>
+          <p>That’s why I stopped going outside.</p>
+          <p>
+            I spent my days locked in, glued to the colors bursting across my
+            screen, slaving away at the same daily rituals.
+          </p>
+          <p>I had to eat at specific times.</p>
+          <p>Very specific meals.</p>
+          <p>In a very specific way.</p>
+          <p>Or else the dread of my impending doom would drown me.</p>
+          <p>
+            Would I really spend my entire short-lived spectacle of a life
+            working until my neurons all turned to sludge?
+          </p>
+          <p>
+            Until my thoughts melted and leaked down onto the freshly mopped
+            floor of some run-of-the-mill desk job?
+          </p>
+          <p>
+            I imagined myself falling out of the paper-thin windows of our
+            shoebox apartment.
+          </p>
+          <p>
+            My head cracking open like a hot pocket left in the microwave, blood
+            and sauce spilling onto the pavement.
+          </p>
+          <p>
+            One of the cleaning robots would scrape my brain matter off the
+            street.
+          </p>
+          <p>Like scraping eggs off a pan.</p>
+          <p>
+            I imagined tripping while getting off an auto-bus, leg getting
+            caught in the smart drainage systems on a street, and falling
+            headfirst into a smart trash bin that glitches, misreads me as
+            trash, and closes its lid, crushing my neck and head with enough
+            force to decapitate me.
+          </p>
+          <p>Death became a constant fixture in my life.</p>
+          <p>A flicker of movement slips into the corner of my vision.</p>
+          <p>I turn—</p>
+          <p>but it’s gone.</p>
+          <div class="panel" id="panel-46">
+            <img
+              src="https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Panel_46.png?v=1742043786164"
+              alt="glitchy eyes"
+            />
+            <div class="blown-away">
+              My eyes send signals to my brain.But my brain misreads them. Like
+              a machine misreads corrupted data.
+            </div>
+          </div>
+          <p>The drag on my limbs becomes stronger.</p>
+          <p>My knees lock up.</p>
+          <div class="blown-away">
+              System failure.
+            </div>
+          <div class="panel" id="panel-48">
+            <img
+              src="https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Panel_48.png?v=1742043783203"
+              alt="falling"
+            />
+            <div class="blown-away">The snow rushes up to greet me.</div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Grid layers: Trees and Darkness Overlay -->
+      <div id="trees-3" class="tree-layer"></div>
+      <div id="trees-2" class="tree-layer"></div>
+      <div id="trees-1" class="tree-layer"></div>
+      <div id="trees-4" class="tree-layer"></div>
+      
+
+      <!-- Footer now inside the .layout grid -->
+    </section>
+    <footer class="footer">
+      <p>Comfort Omotunde &copy;</p>
+    </footer>
+  </body>
+</html>
