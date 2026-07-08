@@ -206,25 +206,25 @@ p, .text, .blown-away, .snow-text {
 }
 
 #trees-1 {
-  background-image: url("https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Forest%20top%20layer.png?v=1741359779851");
+  background-image: url("https://raw.githubusercontent.com/unknownclock/posthuman-vestige/refs/heads/main/panels/Forest%20top%20layer.png");
   z-index: 3; /* Top layer */
   opacity: 1;
 }
 
 #trees-2 {
-  background-image: url("https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Forest%202nd%20layer.png?v=1741359684277");
+  background-image: url("https://raw.githubusercontent.com/unknownclock/posthuman-vestige/refs/heads/main/panels/Forest%202nd%20layer.png");
   z-index: 2; /* Middle layer */
   opacity: 1;
 }
 
 #trees-3 {
-  background-image: url("https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Forest%20bottom%20layer.png?v=1741359693218");
+  background-image: url("https://raw.githubusercontent.com/unknownclock/posthuman-vestige/refs/heads/main/panels/Forest%20bottom%20layer.png");
   z-index: 1; /* Bottom layer */
   opacity: 1;
 }
 
 #trees-4 {
-  background-image: url("https://cdn.glitch.global/2b0402be-c265-4290-8552-c43c6520cb94/Forest%20floor%20fixed.png?v=1741359704370");
+  background-image: url("https://raw.githubusercontent.com/unknownclock/posthuman-vestige/refs/heads/main/panels/Forest%20floor%20fixed.png");
   z-index: 4; /* Closest layer */
   opacity: 1;
 }
