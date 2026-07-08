@@ -166,8 +166,8 @@ h1 span {
 p, .text, .blown-away, .snow-text {
   font-size: 18px; /* Ensure all text is the same size */
   color: white;
-  margin-top:3rem;
-  margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
   width: 90%;
   max-width: 700px;
   text-align: left;
